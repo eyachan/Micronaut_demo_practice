@@ -1,3 +1,4 @@
+## General ideal with links to micronaut
 ## Micronaut 2.5.7 Documentation
 
 - [User Guide](https://docs.micronaut.io/2.5.7/guide/index.html)
@@ -5,14 +6,21 @@
 - [Configuration Reference](https://docs.micronaut.io/2.5.7/guide/configurationreference.html)
 - [Micronaut Guides](https://guides.micronaut.io/index.html)
 ---
+## requirement
+- docker installed
+- maven
+- openJDK 11
 
-## Feature http-client documentation
+## example Json to send as request body
+```json
+{
+  "idBook":"12",
+  "bookTitle":"micronaut"
+}
+```
 
-- [Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
-
-## Feature lombok documentation
-
-- [Micronaut Project Lombok documentation](https://docs.micronaut.io/latest/guide/index.html#lombok)
-
-- [https://projectlombok.org/features/all](https://projectlombok.org/features/all)
-
+## Run dockerfile
+go under the target folder and you will find dockerfile and the jar called demo_from_scratch-0.1.jar and then run the following command
+```docker 
+docker build -t demo_from_scratch-0.1.jar .
+```
